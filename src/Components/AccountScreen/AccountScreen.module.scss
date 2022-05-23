@@ -1,0 +1,92 @@
+@import '../abstractStyle/variables';
+
+.accountScreenContainer {
+    width: 35vw;
+    min-width: 350px;
+    height: 60%;
+    background-color: white;
+}
+
+.accountScreenHeader {
+    max-height: 35%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: $font/2.3;
+    background-color: $tertiary-color;
+    padding-top: 3%;
+    color: $primary-color;
+    font-weight: 900;
+
+    div {
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+
+        h2 {
+            font-size: $font/2;
+        }
+
+        .blur {
+            filter: blur(5px);
+        }
+
+        button {
+            width: 60px;
+            background-color: $tertiary-color;
+            border: none;
+            cursor: pointer;
+            img {
+                max-width: 100%;
+            }
+        }
+    }
+}
+
+.formContainer {
+    width: 100%;
+    max-height: 35%;
+    padding-bottom: 10%;
+    position: relative;
+
+    button:nth-child(1) {
+        border-top: 2px solid $tertiary-color;
+        background-color: $quaternary-color;
+        padding-top: 2%;
+        border-left: none;
+        border-bottom: none;
+        border-right: 2px solid $tertiary-color;
+        max-width: 40px;
+        position: absolute;
+        right: 0;
+        cursor: pointer;
+
+        img {
+            max-width: 100%;
+        }
+    }
+}
+
+.containerButtons {
+    max-height: 30%;
+    display: flex;
+    justify-content: space-evenly;
+    
+    button {
+        min-width: fit-content;
+        width: 35%;
+        background-color: $secondary-color;
+        border: none;
+        font-size: $font/3.1;
+        color: $quaternary-color;
+        min-height: fit-content;
+        height: 45px;
+        cursor: pointer;
+
+        &:hover {
+            transform: scale(1.1);
+            transition: 300ms ease-in-out;
+        }
+    }
+}
